@@ -11,6 +11,7 @@ body {
   background-color: hsl(210, 60%, 98%);
   font-family: "Plus Jakarta Sans";
   font-weight: 500;
+  overflow-x: hidden;
 }
 .bg-1{
   background-color: hsl(210, 60%, 98%);
@@ -62,19 +63,18 @@ body {
   position: relative;
 }
 
-
 .notif-card span{
   margin-right: .3rem;
 }
-
-
-
 
 .notif-card img{
   height: 3rem;
   margin-right: 1rem;
 }
-
+.notif{
+  margin-right: 1rem;
+  width: 100%;
+}
 .user-name{
   font-weight: 800;
 }
@@ -112,11 +112,6 @@ body {
   width: fit-content;
 }
 
-.post-img{
-  right: 0;
-position: absolute;
-}
-
 .post-img:hover, .notif-group:hover{
   cursor:pointer;
 }
@@ -128,15 +123,20 @@ position: absolute;
   background-color: hsl(205, 33%, 90%);
   cursor:pointer;
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 480px) {
   body{
     font-size: 14px;
   }
   .card{
-    width: 99%;
     padding: 1rem 1rem 0 1rem;
+    width: auto;
+    overflow-x: hidden;
   }
-  .post-img{
-    position: relative;
+ }
+@media   (max-width: 1000px) , (min-width:490) {
+   .card{
+    padding: 1rem 1rem 0 1rem;
+    width: 80%;
+    overflow-x: hidden;
   }
-}
+ }
