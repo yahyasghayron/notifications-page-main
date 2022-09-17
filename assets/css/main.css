@@ -40,6 +40,12 @@ body {
   display: flex;
   gap: 0.6rem;
 }
+h1{
+  font-size: 1.2rem;
+  font-weight:800;
+  line-height: 1.1;
+  margin: 0;
+}
 .notifications-counter {
   background-color: hsl(219, 85%, 26%);
   color: hsl(0, 0%, 100%);
