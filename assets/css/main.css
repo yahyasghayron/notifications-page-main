@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Plus jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+}
+
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: hsl(210, 60%, 98%);
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+}
+.bg-1{
+  background-color: hsl(210, 60%, 98%);
+}
+
+
+
+.card {
+  border-radius: 10px;
+  margin: auto;
+  width: 46%;
+  padding: 2rem 2rem 0 2rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1px 3px 72px -19px hsl(200, 30%, 10%, 0.1);
+  -webkit-box-shadow: 1px 3px 72px -19px hsl(200, 30%, 10%, 0.1);
+  -moz-box-shadow: 1px 3px 72px -19px hsl(200, 30%, 10%, 0.1);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.notifications-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  display: flex;
+  gap: 0.6rem;
+}
+.notifications-counter {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  padding: 3px 10px 0px;
+  border-radius: 5px;
+}
+
+.header-right {
+  font-weight: 500;
+  color: hsl(219 ,12%, 42%);
+}
+
+.notif-card{
+  display: flex;
+  border-radius: .5rem;
+  box-shadow: 1px 3px -40px 30px black;
+  padding:1rem;
+  align-items: top;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+
+.notif-card span{
+  margin-right: .3rem;
+}
+
+
+
+
+.notif-card img{
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.user-name{
+  font-weight: 800;
+}
+
+.notif-post{
+  color: hsl(219 ,12%, 42%);
+  font-weight:800;
+}
+.notif-group{
+  color: hsl(219, 85%, 26%);
+  font-weight:800;
+}
+.user-action{
+  color: hsl(219 ,12%, 42%);
+}
+.notif-state{
+  content: "";
+  background-color: hsl(1,90%,64%);
+  width:8px;
+  height: 8px;
+  margin-top: 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.notif-time{
+  color: hsl(219 ,14%, 63%);
+}
+
+.message{
+  padding: 1rem;
+  color: hsl(219 ,12%, 42%);
+  border: solid hsl(219 ,14%, 63%,.5) 1px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+.post-img{
+  right: 0;
+position: absolute;
+}
+
+.post-img:hover, .notif-group:hover{
+  cursor:pointer;
+}
+.header-right:hover, .user-name:hover,.notif-post:hover{
+  cursor:pointer;
+  color:hsl(219, 85%, 26%);
+}
+.message:hover{
+  background-color: hsl(205, 33%, 90%);
+  cursor:pointer;
+}
+@media (max-width: 400px) {
+  body{
+    font-size: 14px;
+  }
+  .card{
+    width: 99%;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .post-img{
+    position: relative;
+  }
+}

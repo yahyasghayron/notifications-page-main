@@ -1,51 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+      <div class="card">
+        <div class="card-header">
+          <div class="notifications-title">
+            <span>Notifications</span>
+            <span class="notifications-counter"> 3 </span>
+          </div>
+          <div class="header-right">Mark all as read</div>
+        </div>
 
-  Notifications 3
+        <div class="notif-card bg-1">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-mark-webber.webp"
+              alt="avatar-mark-webber"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name">Mark Webber </span>
+              <span class="user-action">reacted to your recent post </span>
+              <span class="notif-post">My first tournament today!</span>
+              <span class="notif-state"></span>
+            </div>
+            <span class="notif-time">1m ago</span>
+          </div>
+        </div>
 
-  Mark all as read
+        <div class="notif-card bg-1">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-angela-gray.webp"
+              alt="avatar-angela-gray"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name">Angela Gray</span>
+              <span class="user-action">followed you</span>
+              <span class="notif-state"></span>
+            </div>
+            <span class="notif-time">1m ago</span>
+          </div>
+        </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="notif-card bg-1">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-jacob-thompson.webp"
+              alt="avatar-jacob-thompson"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name">Jacob Thompson </span>
+              <span class="user-action">has joined your group </span>
+              <span class="notif-group">Chess Club</span>
+              <span class="notif-state"></span>
+            </div>
+            <span class="notif-time">1 day ago</span>
+          </div>
+        </div>
+        <div class="notif-card ">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="avatar-rizky-hasanuddin"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name">Rizky Hasanuddin</span>
+              <span class="user-action">sent you a private message</span>
+            </div>
+            <span class="notif-time">5 days ago</span>
+            <div class="message">Hello, thanks for
+        setting up the Chess Club. I've been a member for a few weeks now and
+        I'm already having lots of fun and improving my game.</div>
+          </div>
+        </div>
+        <div class="notif-card ">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-kimberly-smith.webp"
+              alt="avatar-kimberly-smith"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name">Kimberly Smith</span>
+              <span class="user-action">commented on your picture </span>
+            </div>
+            <span class="notif-time">1 week ago </span>
+          </div>
+          <img class="post-img" src="assets/images/image-chess.webp" alt="image-chess">
+        </div>
+        <div class="notif-card ">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-nathan-peterson.webp"
+              alt="avatar-nathan-peterson"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name">Nathan Peterson</span>
+              <span class="user-action">to your recent post</span>
+              <span class="notif-post"> 5 end-game strategies to increase your win rate</span>
+            </div>
+            <span class="notif-time">2 weeks ago</span>
+          </div>
+        </div>
+        <div class="notif-card ">
+          <div class="user-img">
+            <img
+              src="assets/images/avatar-anna-kim.webp"
+              alt="avatar-anna-kim"
+            />
+          </div>
+          <div>
+            <div class="notif">
+              <span class="user-name"> Anna Kim</span>
+              <span class="user-action">left the group</span>
+              <span class="notif-group">Chess Club</span>
+            </div>
+            <span class="notif-time">2 weeks ago</span>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
